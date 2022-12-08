@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: wheat;
+    border: 1px solid black;
+    display: inline-block;
+}
+.o{
+    position: relative;
+}
+.o:after{
+    position: absolute;
+    content:"\2694";
+    font-size: 50px;
+    line-height: 100px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.x{
+    position: relative;
+}
+.x:after{
+    position: absolute;
+    content:"\1F6E1";
+    font-size: 60px;
+    line-height: 100px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+button{
+    position: relative;
+    height: 40px;
+    border-radius: 8px;
+    top: 30px;
+    background-color: wheat;
+    color: black;
+}
