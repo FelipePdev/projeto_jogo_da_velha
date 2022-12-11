@@ -3,6 +3,10 @@ let playerTime = 0;
 let gameOver = false;
 let symbols = ['o','x'];
 
+function reload(){
+    window.location.href=""
+}
+
 function handleMove(position){
     if(gameOver){
         return;
@@ -49,7 +53,6 @@ function isWin(){
 
     }
     return false;
-        
-}
 
+}
 

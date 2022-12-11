@@ -5,19 +5,21 @@ document.addEventListener('DOMContentLoaded',() => {
     squares.forEach((square)=>{
         square.addEventListener('click', handleClick);
     })
-})
+});
 
 function handleClick(event){
     
-    let square = event.target;
+    let square = event.target;  
     let position = square.id;
 
     if(handleMove(position)){
         setTimeout(()=>{
             alert ('O Jogo Acabou o vencedor foi o jogador ' +  playerTime);
         },10);
+        reload();
         
     };
+    
     updateSquares();
 }
 function updateSquares(){
@@ -31,4 +33,10 @@ function updateSquares(){
         }
 
     })
+
+
 }
+const reset = document.querySelector("#reset")
+reset.addEventListener("click", reload);
+
+
