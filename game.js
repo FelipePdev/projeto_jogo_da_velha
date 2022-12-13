@@ -3,8 +3,16 @@ let playerTime = 0;
 let gameOver = false;
 let symbols = ['o','x'];
 
+
+
+
 function reload(){
-    window.location.href=""
+    board = ['','','','','','','','',''];
+    playerTime = 0;
+    gameOver = false;
+    const squares = document.querySelectorAll('.square')
+
+    squares.forEach(square => square.innerHTML = '')
 }
 
 function handleMove(position){

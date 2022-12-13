@@ -16,7 +16,10 @@ function handleClick(event){
         setTimeout(()=>{
             alert ('O Jogo Acabou o vencedor foi o jogador ' +  playerTime);
         },10);
-        reload();
+        setTimeout(()=>{
+            reload();
+        }, 1000);
+        
         
     };
     
